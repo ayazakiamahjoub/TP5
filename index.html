@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+	<header>
+		<h1>Formulaire d'inscriptions Utilisateur</h1>
+	 </header>
+	<form >
+		<label for="Prenom">Prenom </label>
+		<input type="text" name="Prenom" id="Prenom" ><br><br>
+		<form method="post" action="page2.html">
+		<label for="nom">nom </label>
+		<input type="text" name="nom" id="nom" ><br><br>
+		<label for="email">Tapez votre E-mail</label>
+		<input type="email" name="email" id="email" placeholder="ayamahjoub77@gmail.com"><br><br>
+		<label for="pass"> Mot de passe </label>
+		<input type="password" name="pass" id="pass"><br><br>
+		<label for="pass"> Confirmer le mot de passe </label>
+		<input type="password" name="Confirmpass" id="Confirmpass"><br><br>
+		<div class ="row">
+		<fieldset>
+			<legend> Genre</legend>
+			<label for="M">Masculin</label>
+			<input type="radio" name="Genre"  value ="Masculin" id="M">
+			<label for="F">Femenin</label>
+			<input type="radio" name="Genre"  value ="Femenin" id="F">
+
+		</fieldset><br><br>
+	</div>
+		<div class="row">
+		<label for="pays">pays :</label>
+			<select id="pays" name="pays">
+				<option value="">Sélectionnez un pays </option>
+				<option value="Tunisie">Tunisie</option>
+				<option value="France">France</option>
+				<option value="Espagne">Espagne</option>
+			</select><br><br><br><br>
+		</div>
+		<input type="button" id="btn" value="S'inscrire">
+</form>
+   <div id= "successMessage"></div>
+   <div id="errorMessage" class="error"></div>
+
+    <script src="controle.js" async></script>
+
+
+</body>
+</html>
